@@ -6,7 +6,7 @@ function Home({ title, categories, user }) {
   
     <Layout title={title} user={user}>
       <h1>Home Page</h1>
-
+      <div id="map"></div>
     </Layout>
   );
 }

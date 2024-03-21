@@ -38,5 +38,9 @@
     border: #000 1px solid;
   }
 
+  #map {
+    width: 800px;
+    height: 600px;
+  }
 
   
