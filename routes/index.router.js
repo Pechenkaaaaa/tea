@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 // view
-const homeViewRouter = require('/???');
+// const homeViewRouter = require('/??');
 const authViewRouter = require('./views/auth.view.router');
 
 // api
