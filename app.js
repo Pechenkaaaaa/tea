@@ -1,10 +1,14 @@
-require("@babel/register");
-const express = require("express");
+require('@babel/register');
+
+const express = require('express');
+const indexRouter = require('./routes/index.router');
+const serverConfig = require('./config/serverConfig');
+
 const app = express();
-const path = require("path");
+serverConfig(app);
 
+const PORT = process.env.PORT ?? 3000;
 
+app.use('/', indexRouter);
 
-app.listen(3000, () => {
-  console.log("Запустил");
-});
+app.listen(PORT, () => console.log(`Serever has been started at port: ${PORT}`));
