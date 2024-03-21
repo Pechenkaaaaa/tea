@@ -1,0 +1,17 @@
+{
+  "name": "contract-project-chai",
+  "version": "1.0.0",
+  "description": "[Слушать звонок](https://drive.google.com/file/d/1QoU0gPMFfrNFb_ZaLc-Md-MVFqzBnB1T/view?usp=sharing)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
+}
