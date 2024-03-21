@@ -15,7 +15,7 @@ module.exports = {
       },
       {
         name: 'teaonelove',
-        email: 'sale@gmail.com',
+        email: 'user@gmail.com',
         password: hash,
         role: 'user',
         createdAt: new Date(),
