@@ -11,6 +11,7 @@ function Layout({ title, children, user }) {
         <link rel="stylesheet" href="/styles/index.css" />
         <link rel="stylesheet" href="/styles/navbar.css" />
         <link rel="stylesheet" href="/styles/auth.css" />
+        {/* <link rel="stylesheet" href="/styles/fff.css" /> */}
         <script defer src="/scripts/auth.js" />
 
         <script defer src="/scripts/comment.js"/>
