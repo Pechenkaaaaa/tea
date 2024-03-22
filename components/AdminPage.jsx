@@ -13,7 +13,6 @@ function AdminPage({ title, user, teas}) {
 
                     {teas.map((tea) => (
                             <TeaCard tea={tea} user={user} />
-            
                     ))}
                 </div>
 

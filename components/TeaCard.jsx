@@ -5,7 +5,7 @@ function TeaCard({tea}){
 return(
     <div className='TeaCard_container'>
     <div className='TeaCard_item'>
-     <img src={tea.img} />
+     <img src={tea.img} className='teaCard_img'/>
      <p className='teaCard_title'>{tea.title}</p>
      <p className='teaCard_area'>{tea.area}</p>
      <p className='teaCard_description'>{tea.description}</p>
