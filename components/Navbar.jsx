@@ -27,11 +27,11 @@ function Navbar({ user }) {
             <li className="li_nav nav_li_right">
               <a href="/auth/authorization">Sign-In</a>
             </li>
-            <li className="li_nav nav_li_left">
-          <a href="/page/admin">Личный кабинет</a>
-          </li>
           </>
         )}
+        {user?.role === 'admin' && ( <li className="li_nav nav_li_left">
+          <a href="/page/admin">Личный кабинет</a>
+          </li>)}
       </ul>
       <div />
     </nav>
