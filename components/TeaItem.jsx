@@ -6,8 +6,8 @@ function TeaItem ({comment}) {
     return (
         
             <>
-            <div>{comment.User.name}</div>
-            <div>{comment.commentText} </div>
+            <div className='comment-name'>{comment.User.name}</div>
+            <div className='comment-text'>{comment.commentText} </div>
             </>
 
     )
