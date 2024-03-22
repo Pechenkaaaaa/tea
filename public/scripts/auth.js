@@ -88,19 +88,36 @@ if (authForm) {
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
+
+
+
 function init() {
   // Создание карты.
-  const myMap = new ymaps.Map("map", {
+  const map = new ymaps.Map("map", {
     // Координаты центра карты.
     // Порядок по умолчанию: «широта, долгота».
-    // Чтобы не определять координаты центра карты вручную,
+    // Чтобы не определять координаты центра карты вручную, 
     // воспользуйтесь инструментом Определение координат.
     center: [40.76, 37.64],
     // Уровень масштабирования. Допустимые значения:
     // от 0 (весь мир) до 19.
     zoom: 3,
   });
+
+  const myGeoObject = new ymaps.GeoObject({
+    geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [55.8, 37.8] // координаты точки
+    }
+  });
+  map.geoObjects.add(myGeoObject); 
 }
+
+
+// Размещение геообъекта на карте.
+
+//   map.addChild(marker);
+//}
 // var myPolyline = new ymaps.GeoObject({
 //   geometry: {
 //       type: "LineString",
@@ -115,4 +132,4 @@ function init() {
 
 
 // Размещение геообъекта на карте.
-myMap.geoObjects.add(myGeoObject); 
+//myMap.geoObjects.add(myGeoObject); 

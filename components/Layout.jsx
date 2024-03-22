@@ -11,8 +11,9 @@ function Layout({ title, children, user }) {
         <link rel="stylesheet" href="/styles/navbar.css" />
         <link rel="stylesheet" href="/styles/auth.css" />
         <script defer src="/scripts/auth.js" />
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=2b8c8ac9-1006-459d-9cf9-037513872d60&lang=ru_RU" type="text/javascript"></script>
-      </head>
+      
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=9ea303dc-34dc-42f0-930a-87161745f688&lang=ru_RU"></script>
+        </head>
       <body>
         <section />
         <Navbar user={user} />     
