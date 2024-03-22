@@ -12,7 +12,6 @@ function Layout({ title, children, user }) {
         <link rel="stylesheet" href="/styles/navbar.css" />
         <link rel="stylesheet" href="/styles/auth.css" />
         <script defer src="/scripts/auth.js" />
-      
         <script src="https://api-maps.yandex.ru/2.1/?apikey=9ea303dc-34dc-42f0-930a-87161745f688&lang=ru_RU"></script>
         </head>
       <body>

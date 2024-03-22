@@ -65,28 +65,3 @@ nav a {
   font-size: 24px;
   margin-right: 25px;
 }
-
-.li_hello {
-  border-radius: 25%;
-  animation: animate 8s
-  infinite linear alternate;
-}
-
-@keyframes animate {
-  0% {
-    text-shadow: 0px 0px 0px #0630eb;
-  }
-  25% {
-    text-shadow: 0px 0px 0px #e05408;
-  }  
-  50% {
-    text-shadow: 0px 0px 0px #f70303;
-  }
-  75% {
-    text-shadow: 0px 0px 0px #9203f8;
-  }
-  100% {
-    text-shadow: 0x 0px 0px #04f1d6;
-  }
-
-}
