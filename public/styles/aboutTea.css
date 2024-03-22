@@ -1,0 +1,40 @@
+.tea-card {
+    display: flex;
+}
+
+.tea-card, .tea-card img {
+    border: 1px solid #000;
+    margin: 50px;
+    border-radius: 15px;
+}
+
+.tea-area, .tea-description {
+    margin: 50px 50px 50px 0;
+}
+.tea-card img {
+    animation: animate 8s
+    infinite linear alternate;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 3px 7px 15px 0px #556cd1;
+    }
+    25% {
+        box-shadow: 3px 7px 15px 0px #e05408;
+    }  
+    50% {
+        box-shadow: 3px 7px 15px 0px #f70303;
+    }
+    75% {
+        box-shadow: 3px 7px 15px 0px #9203f8;
+    }
+    100% {
+        box-shadow: 3x 7px 15px 0px #04f1d6;
+    }
+
+  }
+
+  .tea-area {
+    font-weight: bold;
+  }
