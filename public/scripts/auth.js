@@ -90,7 +90,7 @@ if (authForm) {
 
 ymaps.ready(init);
 
-function init() {
+async function init() {
   // Создание карты.
   const map = new ymaps.Map("map", {
     // Координаты центра карты.
@@ -103,11 +103,16 @@ function init() {
     zoom: 3,
   });
   
-  const myGeoObject = new ymaps.GeoObject({
-    geometry: {
-      type: "Point", // тип геометрии - точка
-      coordinates: [15.8, 78.8], // координаты точки
-    },
-  });
-  map.geoObjects.add(myGeoObject);
+  const res = await fetch("/teaPoint");
+  const getTea = await res.json();
+  getTea.map((el) => {
+    // console.log(getTea);
+    const myGeoObject = new ymaps.GeoObject({
+      geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [el.coordinatesX, el.coordinatesY], // координаты точки
+      },
+    });
+    map.geoObjects.add(myGeoObject);
+  })
 }
