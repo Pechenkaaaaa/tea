@@ -87,10 +87,12 @@ if (authForm) {
 
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+
 ymaps.ready(init);
-function init() {
+
+async function init() {
   // Создание карты.
-  const myMap = new ymaps.Map("map", {
+  const map = new ymaps.Map("map", {
     // Координаты центра карты.
     // Порядок по умолчанию: «широта, долгота».
     // Чтобы не определять координаты центра карты вручную,
@@ -100,19 +102,21 @@ function init() {
     // от 0 (весь мир) до 19.
     zoom: 3,
   });
+
+  const res = await fetch("/teaPoint");
+  const getTea = await res.json();
+  // console.log(getTea);
+  getTea.map((el) => {
+    const myGeoObject = new ymaps.GeoObject({
+      geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [el.coordinatesX, el.coordinatesY], // координаты точки
+      },
+    });
+    map.geoObjects.add(myGeoObject);
+    myGeoObject.events.add("click", function (e) {
+      // Открытие нового окна с редиректом
+      window.location.href = `http://localhost:3000/tea/${el.id}`;
+    });
+  });
 }
-// var myPolyline = new ymaps.GeoObject({
-//   geometry: {
-//       type: "LineString",
-//       coordinates: [
-//           [55.80, 37.30],
-//           [55.80, 37.40],
-//           [55.70, 37.30],
-//           [55.70, 37.40]
-//       ]
-//   }
-// });
-
-
-// Размещение геообъекта на карте.
-myMap.geoObjects.add(myGeoObject); 
