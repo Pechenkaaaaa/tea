@@ -1,3 +1,4 @@
+const fff = require('../components/FFF');
 const router = require('express').Router();
 
 // view
@@ -28,5 +29,7 @@ router.use('/api/tea', commentApiRouter)
 
 router.use('/teaPoint', teaApiRouter);
 
-
+router.use('/*', (req, res)=>{
+    res.send(res.renderComponent(fff));
+})
 module.exports = router;
