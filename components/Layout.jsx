@@ -13,8 +13,15 @@ function Layout({ title, children, user }) {
         <link rel="stylesheet" href="/styles/auth.css" />
         <link rel="stylesheet" href="/styles/teaCard.css" />
         <script defer src="/scripts/auth.js" />
+          
         <script defer src="/scripts/delete.js" />
-        </head>
+
+        <script defer src="/scripts/comment.js"/>
+
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=2b8c8ac9-1006-459d-9cf9-037513872d60&lang=ru_RU" type="text/javascript"></script>
+        <link rel="stylesheet" href="/styles/aboutTea.css" />
+      </head>
+
       <body>
         <section />
         <Navbar user={user} />     

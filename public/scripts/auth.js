@@ -102,11 +102,11 @@ async function init() {
     // от 0 (весь мир) до 19.
     zoom: 3,
   });
-  
+
   const res = await fetch("/teaPoint");
   const getTea = await res.json();
+  // console.log(getTea);
   getTea.map((el) => {
-    // console.log(getTea);
     const myGeoObject = new ymaps.GeoObject({
       geometry: {
         type: "Point", // тип геометрии - точка
@@ -114,5 +114,9 @@ async function init() {
       },
     });
     map.geoObjects.add(myGeoObject);
-  })
+    myGeoObject.events.add("click", function (e) {
+      // Открытие нового окна с редиректом
+      window.location.href = `http://localhost:3000/tea/${el.id}`;
+    });
+  });
 }

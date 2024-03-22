@@ -38,3 +38,10 @@
   .tea-area {
     font-weight: bold;
   }
+
+
+  .chat-container {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+  }
