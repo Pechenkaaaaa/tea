@@ -6,7 +6,7 @@ function TeaChat ({comment}) {
     return (
         <div className='chat-container'>
         <div className='chat-tea'>
-        <h3>Комментарии</h3>
+
         <p>{comment.map((el) => (
             <>
           <TeaItem comment={el}/>

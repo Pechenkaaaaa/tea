@@ -26,6 +26,7 @@ function AboutTea({ tea, user, comments }) {
           ) : (<></>)}
           </div>
         </div>
+                <h3>Комментарии</h3>
         <FormAddComment tea={tea} />
         <TeaChat comment={comments} tea={tea} />
     </div>
