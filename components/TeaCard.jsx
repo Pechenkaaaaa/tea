@@ -3,7 +3,7 @@ const React = require('react');
 
 function TeaCard({tea}){
 return(
-    <div className='TeaCard_container'>
+    <div className='TeaCard_container' data-id={tea.id}>
     <div className='TeaCard_item'>
      <img src={tea.img} className='teaCard_img'/>
      <p className='teaCard_title'>{tea.title}</p>

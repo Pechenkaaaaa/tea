@@ -1,8 +1,11 @@
 const React = require('react');
 const Layout = require('./Layout');
+const TeaChat = require('./TeaChat');
+const FormAddComment = require('./FormAddComment');
 
-function AboutTea({ tea, user }) {
+function AboutTea({ tea, user, comments }) {
   
+
   return (
     <Layout tea={tea} user={user}>
     <div className="teaItems" data-teaid={tea.id}>
@@ -23,6 +26,8 @@ function AboutTea({ tea, user }) {
           ) : (<></>)}
           </div>
         </div>
+        <FormAddComment tea={tea} />
+        <TeaChat comment={comments} tea={tea} />
     </div>
     </Layout>
   );
