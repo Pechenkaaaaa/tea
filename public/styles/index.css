@@ -8,3 +8,36 @@
     text-align: center;
     margin-bottom: 50px;
   }
+
+  /* section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    color: #fff;
+  }
+
+  body {
+    animation: animate 10s
+    infinite linear alternate;
+  }
+
+  @keyframes animate {
+    0% {
+      background: #274bea;
+    }
+    25% {
+      background: #d0672e;
+    }  
+    50% {
+      background: #cc4040;
+    }
+    75% {
+      background: #723b9a;
+    }
+    100% {
+      background: #60b8ae;
+    }
+
+  } */
