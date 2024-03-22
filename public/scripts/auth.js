@@ -113,23 +113,3 @@ function init() {
   map.geoObjects.add(myGeoObject); 
 }
 
-
-// Размещение геообъекта на карте.
-
-//   map.addChild(marker);
-//}
-// var myPolyline = new ymaps.GeoObject({
-//   geometry: {
-//       type: "LineString",
-//       coordinates: [
-//           [55.80, 37.30],
-//           [55.80, 37.40],
-//           [55.70, 37.30],
-//           [55.70, 37.40]
-//       ]
-//   }
-// });
-
-
-// Размещение геообъекта на карте.
-//myMap.geoObjects.add(myGeoObject); 
