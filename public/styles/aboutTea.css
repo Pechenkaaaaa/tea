@@ -14,6 +14,8 @@
 .tea-card img {
     animation: animate 8s
     infinite linear alternate;
+    width: 600px;
+    height: 450px;
 }
 
 @keyframes animate {
@@ -44,4 +46,53 @@
     border: 1px solid #000;
     display: flex;
     justify-content: center;
+  }
+
+  .teaItems h3 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+   }
+
+   .form-add-comment input {
+    height: 55px;
+    margin-right: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    width: 550px;
+    margin-bottom: 30px;
+}
+.form-comment-container {
+    display: flex;
+    justify-content: center;
+}
+   .form-add-comment button  {
+    background-color: #000;
+    color: #fff;
+    /* padding: 10px; */
+    /* padding-bottom: 15px; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    height:55px;
+    margin-bottom: 30px;
+  }
+  
+  .form-add-comment button:hover {
+    background-color: #fff;
+    color: #000;
+    border: #000 0.5px solid;
+    /* padding: 9px; */
+  }
+
+  .comment-name {
+    font-weight: bolder;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .comment-text {
+    margin-bottom: 25px;
+    font-size: 25px;
   }

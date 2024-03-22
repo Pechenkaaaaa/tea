@@ -7,7 +7,7 @@ function FormAddComment ({tea}) {
 
             <form className='form-add-comment' data-teaid={tea.id}>
                 <input type="text" name='commentText' placeholder='Введите комментарий'/>
-                <button type='submit'>Отправить комментарий</button>
+                <button className='btn-comment' type='submit'>Отправить комментарий</button>
             </form>
 
         </div>
