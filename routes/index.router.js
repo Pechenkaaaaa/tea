@@ -5,7 +5,7 @@ const homeViewRouter = require('./views/home.view.router');
 const authViewRouter = require('./views/auth.view.router');
 
 const aboutTeaViewRouter = require('./views/aboutTea.view.router');
-const adminViewRouter = require('./views/AdminPage.view.router');
+const adminViewRouter = require('./views/adminPage.view.router');
 
 // api
 const authApiRouter = require('./api/auth.api.router');
