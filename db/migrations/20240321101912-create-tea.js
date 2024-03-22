@@ -36,6 +36,14 @@ module.exports = {
         onDelete: "cascade",
         onUpdate: "cascade",
       },
+      coordinatesX: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+      },
+      coordinatesY: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
