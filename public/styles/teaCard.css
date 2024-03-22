@@ -1,6 +1,17 @@
+body{
+  animation: animate 10s
+infinite linear alternate;
+background-color: #bdc6c6;
+
+}
+
+
+
+
 
 .tea_container{
-display: grid;
+display: flex;
+flex-wrap: wrap;
 grid-template-columns: repeat(2, 200px);
 gap: 100px;
 margin: auto;
@@ -12,8 +23,10 @@ justify-content: center;
 }
 .TeaCard_item{
 margin: 55px auto;
-/* animation: animate 10s
-infinite linear alternate; */
+width: 700px;
+animation: animate 10s
+infinite linear alternate;
+background-color: #60b8ae;
 
 
 
@@ -22,12 +35,12 @@ infinite linear alternate; */
  
   
 
-/* @keyframes animate {
+@keyframes animate {
     0% {
-      background: #274bea;
+      background: #020926;
     }
     25% {
-      background: #d0672e;
+      background: #57c6ef;
     }  
     50% {
       background: #cc4040;
@@ -36,6 +49,84 @@ infinite linear alternate; */
       background: #723b9a;
     }
     100% {
-      background: #60b8ae;
-    } */
-/* } */
+      background: #780000;
+    }
+
+
+
+  }
+    .btn {
+      display: inline-block;	
+      box-sizing: border-box;
+      padding: 0 20px;
+      margin: 0 15px 15px 0;
+      outline: none;
+      border: none;  
+      border-radius: 4px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #050202;
+      background-color: #6a6dff;
+      box-shadow: 0 2px #21487f;
+      cursor: pointer;
+      user-select: none;
+      appearance: none;
+      touch-action: manipulation;  
+      vertical-align: top;
+    }
+    .btn:hover {
+      background-color: #1a275a;
+      color: white;
+    }
+    .btn:active {
+      background-color: #2f599e !important;
+    }
+    .btn:focus-visible {
+      box-shadow: 0 0 0 3px lightskyblue;
+    }
+    .btn:disabled {
+      background-color: #6c87b5;
+      pointer-events: none;
+    }
+
+    .teaCard_btn-update {
+      display: inline-block;	
+      box-sizing: border-box;
+      padding: 0 20px;
+      margin: 0 15px 15px 0;
+      outline: none;
+      border: none;  
+      border-radius: 4px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #050202;
+      background-color: #6a6dff;
+      box-shadow: 0 2px #21487f;
+      cursor: pointer;
+      user-select: none;
+      appearance: none;
+      touch-action: manipulation;  
+      vertical-align: top;
+    }
+    .teaCard_btn-update:hover {
+      background-color: #1a275a;
+      color: white;
+    }
+    .teaCard_btn-update:active {
+      background-color: #2f599e !important;
+    }
+    .teaCard_btn-update:focus-visible {
+      box-shadow: 0 0 0 3px lightskyblue;
+    }
+    .teaCard_btn-update:disabled {
+      background-color: #6c87b5;
+      pointer-events: none;
+    }
+    
+    
