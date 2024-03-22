@@ -1,0 +1,41 @@
+
+.tea_container{
+display: grid;
+grid-template-columns: repeat(2, 200px);
+gap: 100px;
+margin: auto;
+align-items: center;
+justify-content: center;
+
+
+
+}
+.TeaCard_item{
+margin: 55px auto;
+/* animation: animate 10s
+infinite linear alternate; */
+
+
+
+}
+ 
+ 
+  
+
+/* @keyframes animate {
+    0% {
+      background: #274bea;
+    }
+    25% {
+      background: #d0672e;
+    }  
+    50% {
+      background: #cc4040;
+    }
+    75% {
+      background: #723b9a;
+    }
+    100% {
+      background: #60b8ae;
+    } */
+/* } */

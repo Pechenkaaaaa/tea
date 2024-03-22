@@ -5,7 +5,6 @@ const AdminPage = require('../../components/AdminPage');
 router.get("/admin", async (req, res) => {
     try {
         const teas = await Tea.findAll();
-        console.log(teas);
         res.send(res.renderComponent( AdminPage, {title: 'All teas', teas}))
       
         
