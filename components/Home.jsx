@@ -6,7 +6,7 @@ function Home({ title, categories, user }) {
   
     <Layout title={title} user={user}>
       <h1>Home Page</h1>
-      <div id="map"></div>
+      <center><div id="map" className='d-flex justify-content-center align-items-center'></div></center>
     </Layout>
   );
 }
