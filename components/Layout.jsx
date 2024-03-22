@@ -14,7 +14,7 @@ function Layout({ title, children, user }) {
       </head>
       <body>
         <section />
-        <Navbar user={user} />
+        <Navbar user={user} />     
         {children}
       </body>
     </html>
