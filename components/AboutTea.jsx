@@ -1,6 +1,7 @@
 const React = require('react');
 const Layout = require('./Layout');
 const TeaChat = require('./TeaChat');
+const FormAddComment = require('./FormAddComment');
 
 function AboutTea({ tea, user, comments }) {
   
@@ -25,7 +26,8 @@ function AboutTea({ tea, user, comments }) {
           ) : (<></>)}
           </div>
         </div>
-        <TeaChat comment={comments} />
+        <FormAddComment tea={tea} />
+        <TeaChat comment={comments} tea={tea} />
     </div>
     </Layout>
   );

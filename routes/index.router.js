@@ -9,6 +9,7 @@ const adminViewRouter = require('./views/adminPage.view.router');
 
 // api
 const authApiRouter = require('./api/auth.api.router');
+const commentApiRouter = require('./api/comment.api.router');
 
 // view router
 router.use('/', homeViewRouter);
@@ -18,5 +19,6 @@ router.use('/page',adminViewRouter)
 
 // api router
 router.use('/api/auth', authApiRouter);
+router.use('/api/tea', commentApiRouter)
 
 module.exports = router;
