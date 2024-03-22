@@ -7,6 +7,7 @@ function Layout({ title, children, user }) {
     <html lang="en">
       <head>
         <title>{title}</title>
+        <link rel="stylesheet" href="/styles/card.css" />
         <link rel="stylesheet" href="/styles/index.css" />
         <link rel="stylesheet" href="/styles/navbar.css" />
         <link rel="stylesheet" href="/styles/auth.css" />
@@ -15,7 +16,7 @@ function Layout({ title, children, user }) {
       </head>
       <body>
         <section />
-        <Navbar user={user} />
+        <Navbar user={user} />     
         {children}
       </body>
     </html>

@@ -3,7 +3,9 @@ const router = require('express').Router();
 // view
 const homeViewRouter = require('./views/home.view.router');
 const authViewRouter = require('./views/auth.view.router');
+
 const aboutTeaViewRouter = require('./views/aboutTea.view.router');
+const adminViewRouter = require('./views/AdminPage.view.router');
 
 // api
 const authApiRouter = require('./api/auth.api.router');
@@ -12,6 +14,7 @@ const authApiRouter = require('./api/auth.api.router');
 router.use('/', homeViewRouter);
 router.use('/auth', authViewRouter);
 router.use('/tea', aboutTeaViewRouter);
+router.use('/page',adminViewRouter)
 
 // api router
 router.use('/api/auth', authApiRouter);
